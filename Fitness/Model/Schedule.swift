@@ -21,8 +21,8 @@ struct Schedule: Codable{
 struct ResponseSchedule{
     let cells: [Schedule]
 
-    func returnSchedule(for weekkDay: Int) ->[Schedule]{
-        let scheduleInDay = cells.filter{$0.weekDay == weekkDay}
+    func returnSchedule(for weekDay: Int) ->[Schedule]{
+        let scheduleInDay = cells.filter{$0.weekDay == weekDay}
         return scheduleInDay
     }
 }
